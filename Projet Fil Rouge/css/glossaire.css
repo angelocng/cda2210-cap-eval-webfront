@@ -1,0 +1,15 @@
+main >h1,#div0{
+    text-align:center;
+}
+
+input{
+    width : 25%;
+}
+
+datalist{
+    position: fixed;
+}
+
+main > #result {
+    padding: 100px;
+}

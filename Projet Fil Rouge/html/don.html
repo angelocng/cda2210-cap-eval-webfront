@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <title>Formulaire d'envoi de dons - Site HandiA11y</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/basis.css">
+    <link rel="stylesheet" href="../css/styledon.css">
+    <link rel="stylesheet" href="../accessconfig/css/accessconfig.min.css" type="text/css" media="screen">
+    <script src="../accessconfig/js/accessconfig.min.js"></script>
+    <script src="../js/accordion.js" type="module"></script>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="divLeft" aria-labelledby="navEvitement">
+            <h1 id="navEvitement">Accès rapides</h1>
+        <ul id="evitement">
+            <li>
+                <a href="#contenu">Aller au contenu</a>
+            </li>
+            <li>
+                <a href="#menusite">Aller au menu</a>
+            </li>
+            <li>
+                <a href="#rechercheOnSite">Aller à la recherche</a>
+            </li>
+        </ul>
+        </nav>
+        <div class="divLeft">
+        <img src="../imagesHandiA11y/a11yNow.png" alt="Icone du site HandiA11y">        
+        </div>
+        
+        <nav aria-labelledby="navMenuSite">
+            <h1 id="navMenuSite" hidden>Plan du site</h1>
+        <menu id="menusite">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./a11y.html">A11y</a></li>
+            <li><a href="./handicap.html">Handicaps</a></li>
+            <li><a href="./don.html">Faites un don</a></li>
+            <li><a href="./equipe.html">Équipe</a></li>
+            <li><a href="./plan.html">Plan du site</a></li>
+            <li><a href="./glossaire.html">Glossaire</a></li>
+            <li><a href="./terme.html">Termes</a></li>
+            <li><div id="accessconfig" data-accessconfig-buttonname="Paramètres d’accessibilité" data-accessconfig-params='{ "Prefix" : "a42-ac", "ContainerClass" : "","ModalCloseButton" : "","ModalTitle" : "","FormFieldset" : "","FormFieldsetLegend" : "","FormRadio" : ""}' ></div></li>
+        </menu>
+        </nav>
+        <div id="recherche">
+            <label class="sr-only" for="rechercheOnSite">Zone de recherche</label>
+            <input type="text" id="rechercheOnSite" name="rechercheOnSite" placeholder="Rechercher">
+            <button class="buttonDeRecherche" type="button">Rechercher</button>
+        </div>      
+    </header>
+
+
+<main id="contenu">
+<section>
+    <h1>Nous sommes bénévoles, faites un don ! </h1>
+    <img src="../imagesHandiA11y/directrice.png" alt="">
+    <form method="get">
+        <div class="form-don">
+            <fieldset>
+                <legend>Informations personnelles</legend>
+            <p>
+            <label for="civilite">Civilité : </label>
+            <select name="civilite" id="civilite">
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+                <option value="autre">Ni l'un ni l'autre</option>
+            </select>
+        </p>
+            <p>
+                <label for="prenom">Prénom : </label>
+                <input type="text" name="prenom" id="prenom" required>
+            </p>
+            <p>
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" id="nom" required>
+            </p>
+            <p>
+                <label for="age">Âge :</label>
+                <input type="text" name="age" id="age">
+            </p>
+            <p>
+                <label for="courriel">Courriel :</label>
+                <input type="email" name="courriel" id="courriel" required>
+            </p>
+            </fieldset>
+        </div>
+        <div class="form-don">
+            <fieldset>
+                <legend>Adresse</legend>
+                <p>
+                    <label for="numero">Numéro :</label>
+                    <input type="text" name="numero" id="numero">
+                </p>
+                <p>
+                    <label for="nomRue">Nom de la rue :</label>
+                    <input type="text" name="nomRue" id="nomRue">
+                </p>
+                <p>
+                    <label for="cp">Code postal :</label>
+                    <input type="text" name="cp" id="cp">
+                </p>
+                <p>
+                    <label for="ville">Ville :</label>
+                    <input type="text" name="ville" id="ville">
+                </p>
+            </fieldset>
+            </div>
+            <div class="form-don">
+
+            
+            <fieldset>
+                <legend>Cochez la ou les cases correspondant à vos souhaits. </legend>
+                <p>
+                    <label for="news">Recevoir la newsletter :</label>
+                    <input type="checkbox" name="news" id="news">
+                </p>
+                <p>
+                    <label for="engagement">Devenir bénévole :</label>
+                    <input type="checkbox" name="engagement" id="engagement">
+                </p>
+            </fieldset>
+        </div>
+        <div class="form-don">
+            <fieldset>
+                <legend>Montant du don</legend>
+                <p>
+                    <label for="montant">Montant : </label>
+                    <select name="montant" id="montant">
+                        <option value="10">10 euros</option>
+                        <option value="20">20 euros</option>
+                        <option value="100">100 euros</option>
+                    </select>
+                </p>
+            </fieldset>
+        </div>
+        <div class="form-don">
+            <fieldset>
+                <legend>Informations de paiement</legend>
+                <fieldset>
+                    <legend>Choix de la carte</legend>
+                    <div class="choixCarte">
+                        <input type="radio" id="master" name="carte" value="master"
+                               >
+                        <label for="master">Master Card</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cb" name="carte" value="cb">
+                        <label for="cb">CB</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="visa" name="carte" value="visa">
+                        <label for="visa">Visa</label>
+                    </div>
+                </fieldset>
+                <p>
+                    <label for="numeroCarte">Numéro de carte :</label>
+                    <input type="text" name="numeroCarte" id="numeroCarte">
+                </p>
+                <p>
+                    <label for="dateExp">Date d'expiration :</label>
+                    <input type="text" name="dateExp" id="dateExp">
+                </p>
+                <p>
+                    <label for="codeSecret">Code secret :</label>
+                    <input type="text" name="codeSecret" id="codeSecret">
+                </p>
+            </fieldset>
+        </div>
+        <div id="div-button" class="form-don">
+            <button type="submit" value="Valider le don">Valider le don</button>
+        </div>
+    </form>
+</section>
+</main>
+    <footer>
+        <p>&copy;2023 HandiA11y. Tous droits réservés. </p>
+    </footer>
+</body>
+</html>

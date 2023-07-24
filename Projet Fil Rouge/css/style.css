@@ -1,0 +1,167 @@
+:root{
+    --header-color:#0065d1;
+    --button-color:#ffc107;
+    --article-color:#9bc9f7;
+    --th-color:#6d6767;
+    --light:#ffffff;
+    --light-grey:#edecec;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    font-size:1.6rem;
+}
+
+header{
+    margin:0px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width:100%;
+    background-color:var(--header-color);
+    color:var(--light);
+}
+
+header>div>img{
+    height:100px;
+    width:auto;
+}
+
+header > nav > h1{
+    margin:10px;
+    font-size:1.6rem;
+}
+
+header>.divLeft>ul>li>a{
+    color:var(--light);
+}
+
+header>nav>menu{
+    display:flex;
+    justify-content:space-around;
+    list-style-type:none;
+    margin-right:200px;
+}
+
+header>nav>menu>li>a{
+    color:var(--light);
+}
+
+header> nav>menu>li{
+    padding-right:10px;
+    padding-top:25px;
+}
+
+header>#recherche{
+    padding-top: 40px;
+}
+
+header>#recherche>.buttonDeRecherche{
+    background-color: var(--button-color);
+}
+
+main{
+    text-align:center;
+}
+
+.navPresentation{
+    padding-left:30%;
+    width:40%;
+}
+
+h2{
+    margin:0px;
+}
+
+p{
+    text-align: justify;
+}
+
+main>section>#divPrincipe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+}
+
+.articlePrincipe{
+    background-color:var(--article-color);
+    border-radius:10px;
+    box-shadow:0px 0px 0.3rem 0rem black;
+    width:400px;
+}
+
+.articlePrincipe>p{
+    padding:5px;
+}
+
+table{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    width:80%;
+}
+
+table, th, td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+
+.entete{
+    background-color:var(--th-color);
+    color:var(--light-grey);
+    width:auto;
+    text-align:center;
+}
+
+.entetetabconf{
+    background-color:var(--th-color);
+    color:var(--light-grey);
+    width:auto;
+}
+
+#objectifth{
+    width:80%;
+}
+
+#descriptionth{
+    width:100%;
+}
+
+.divTest> p{
+    text-align:center;
+}
+
+.sectionFail>p{
+    text-align:center;
+}
+
+footer{
+    background-color: var(--header-color);
+    padding:10px;
+}
+
+footer >p{
+    text-align:center;
+    color:var(--light);
+    margin:0;
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+			clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}

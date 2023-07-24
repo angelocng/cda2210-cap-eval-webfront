@@ -1,0 +1,26 @@
+img{
+    height:100px;
+}
+
+main li{
+    list-style:none;
+}
+
+main section{
+    width:50%;
+    margin-left:25%;
+}
+
+main{
+    text-align:center;
+}
+
+#listeExemple{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#listeExemple>li{
+    padding:2rem;
+}

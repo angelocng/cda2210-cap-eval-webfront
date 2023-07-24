@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/basis.css">
+    <link rel="stylesheet" href="../css/glossaire.css">
+    <link rel="stylesheet" href="../accessconfig/css/accessconfig.min.css" type="text/css" media="screen">
+    <script src="../accessconfig/js/accessconfig.min.js"></script>
+    <script src="../js/glossaire.js" type="module"></script>
+    <title>Équipe - Site HandiA11y</title>
+</head>
+
+<body>
+    <header>
+        <nav class="divLeft" aria-labelledby="navEvitement">
+            <h1 id="navEvitement">Accès rapides</h1>
+        <ul id="evitement">
+            <li>
+                <a href="#contenu">Aller au contenu</a>
+            </li>
+            <li>
+                <a href="#menusite">Aller au menu</a>
+            </li>
+            <li>
+                <a href="#rechercheOnSite">Aller à la recherche</a>
+            </li>
+        </ul>
+        </nav>
+        <div class="divLeft">
+        <img src="../imagesHandiA11y/a11yNow.png" alt="Icone du site HandiA11y">        
+        </div>
+        
+        <nav aria-labelledby="navMenuSite">
+            <h1 id="navMenuSite" hidden>Plan du site</h1>
+        <menu id="menusite">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./a11y.html">A11y</a></li>
+            <li><a href="./handicap.html">Handicaps</a></li>
+            <li><a href="./don.html">Faites un don</a></li>
+            <li><a href="./equipe.html">Équipe</a></li>
+            <li><a href="./plan.html">Plan du site</a></li>
+            <li><a href="./glossaire.html">Glossaire</a></li>
+            <li><a href="./terme.html">Termes</a></li>
+            <li><div id="accessconfig" data-accessconfig-buttonname="Paramètres d’accessibilité" data-accessconfig-params='{ "Prefix" : "a42-ac", "ContainerClass" : "","ModalCloseButton" : "","ModalTitle" : "","FormFieldset" : "","FormFieldsetLegend" : "","FormRadio" : ""}' ></div></li>
+        </menu>
+        </nav>
+        <div id="recherche">
+            <label class="sr-only" for="rechercheOnSite">Zone de recherche</label>
+            <input type="text" id="rechercheOnSite" name="rechercheOnSite" placeholder="Rechercher">
+            <button class="buttonDeRecherche" type="button">Rechercher</button>
+        </div>      
+    </header>
+
+    <main>
+        <h1>Glossaire</h1>
+        <div id="div0">
+            <label for="data">Choisir un intitulé : </label>
+            <input id="data" name="data" type="search" list="mydatalist">    
+        </div>   
+        <datalist id="mydatalist">
+    
+        </datalist>
+        <div id="result">
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;2023 HandiA11y. Tous droits réservés. </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/basis.css">
+    <link rel="stylesheet" href="../css/styleequipe.css">
+    <link rel="stylesheet" href="../accessconfig/css/accessconfig.min.css" type="text/css" media="screen">
+    <script src="../accessconfig/js/accessconfig.min.js"></script>
+    <script src="../js/accordion.js" type="module"></script>
+    <title>Équipe - Site HandiA11y</title>
+</head>
+
+<body>
+    <header>
+        <nav class="divLeft" aria-labelledby="navEvitement">
+            <h1 id="navEvitement">Accès rapides</h1>
+        <ul id="evitement">
+            <li>
+                <a href="#contenu">Aller au contenu</a>
+            </li>
+            <li>
+                <a href="#menusite">Aller au menu</a>
+            </li>
+            <li>
+                <a href="#rechercheOnSite">Aller à la recherche</a>
+            </li>
+        </ul>
+        </nav>
+        <div class="divLeft">
+        <img src="../imagesHandiA11y/a11yNow.png" alt="Icone du site HandiA11y">        
+        </div>
+        
+        <nav aria-labelledby="navMenuSite">
+            <h1 id="navMenuSite" hidden>Plan du site</h1>
+        <menu id="menusite">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./a11y.html">A11y</a></li>
+            <li><a href="./handicap.html">Handicaps</a></li>
+            <li><a href="./don.html">Faites un don</a></li>
+            <li><a href="./equipe.html">Équipe</a></li>
+            <li><a href="./plan.html">Plan du site</a></li>
+            <li><a href="./glossaire.html">Glossaire</a></li>
+            <li><a href="./terme.html">Termes</a></li>
+            <li><div id="accessconfig" data-accessconfig-buttonname="Paramètres d’accessibilité" data-accessconfig-params='{ "Prefix" : "a42-ac", "ContainerClass" : "","ModalCloseButton" : "","ModalTitle" : "","FormFieldset" : "","FormFieldsetLegend" : "","FormRadio" : ""}' ></div></li>
+        </menu>
+        </nav>
+        <div id="recherche">
+            <label class="sr-only" for="rechercheOnSite">Zone de recherche</label>
+            <input type="text" id="rechercheOnSite" name="rechercheOnSite" placeholder="Rechercher">
+            <button class="buttonDeRecherche" type="button">Rechercher</button>
+        </div>      
+    </header>
+
+    <main id="contenu">
+        <section>
+            <h1>Notre présence dans le monde ! </h1>
+            <p>HandiA11y est un site fictif en cours de création permettant d'effectuer des tests d'accessibilité avec un lecteur d'écran comme NVDA ou JAWS.</p>
+            <section>
+                <h2 id="benevole">Une équipe dirigeante à la pointe de la technologie (Paris)</h2>
+                <section class="directrice">
+                    <figure>                    
+                    <img src="../imagesHandiA11y/directrice.png" alt="">
+                    <figcaption><span class="tobold">Directrice et experte en développement web</span><br>Raymonde Muche <span class="sr-only">Fin légende</span></figcaption>
+                </figure>
+                </section>
+                <section class="nondirecteurs">
+                    <section class="benevole">
+                        <figure>
+                            <img src="../imagesHandiA11y/communication.png" alt="">
+                            <figcaption><span class="tobold">Communication</span><br>Barbara Coiffure <span class="sr-only">Fin légende</span></figcaption>
+                        </figure>
+                    </section>
+                    <section class="benevole">
+                        <figure>
+                            <img src="../imagesHandiA11y/rh.png" alt="">
+                            <figcaption><span class="tobold">Relations clients</span><br>Johnny PasDepp <span class="sr-only">Fin légende</span></figcaption>
+                        </figure>
+                    </section>
+                    <section class="benevole">
+                        <figure>
+                            <img src="../imagesHandiA11y/webmaster.png" alt="">
+                            <figcaption><span class="tobold">Accessibilité</span><br>Ariana PasGrandé <span class="sr-only">Fin légende</span></figcaption>
+                        </figure>
+                    </section>
+                    <section class="benevole">
+                        <figure>
+                            <img src="../imagesHandiA11y/noixdecoco.png" alt="">
+                            <figcaption><span class="tobold">Mascotte</span><br>Noix de Coco <span class="sr-only">Fin légende</span></figcaption>
+                        </figure>
+                    </section>
+                </section>
+            </section>
+
+           
+            <section>
+                <h2 id="implantation">Notre implantation est pourtant réelle (enfin, presque <span role="presentation">;)</span> <span class="sr-only">émoticone clin d'oeil</span> )</h2>
+                <ul>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Paris" target="_blank" aria-label="page wikipédia Paris nouvel onglet">Paris</a> le siège (France) - 4 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/New_York" target="_blank" aria-label="page wikipédia New-York nouvel onglet">New York</a> (États-Unis) - 12 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Londres" target="_blank" aria-label="page wikipédia Londres nouvel onglet">Londres</a> (Royaume-Uni) - 18 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Tokyo" target="_blank" aria-label="page wikipédia Tokyo nouvel onglet">Tokyo</a> (Japon) - 10 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Berlin" target="_blank" aria-label="page wikipédia Berlin nouvel onglet">Berlin</a> (Allemagne) - 8 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Moscou" target="_blank" aria-label="page wikipédia Moscou nouvel onglet">Moscou</a> (Russie) - 1 bénévole
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/P%C3%A9kin" target="_blank" aria-label="page wikipédia Pékin nouvel onglet">Pékin</a> (Chine) - 200 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Sydney" target="_blank" aria-label="page wikipédia Sydney nouvel onglet">Sydney</a> (Australie) - 9 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/S%C3%A3o_Paulo" target="_blank" aria-label="page wikipédia São Paulo nouvel onglet">São Paulo</a> (Brésil) - 7 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Duba%C3%AF_(ville)" target="_blank" aria-label="page wikipédia Dubaï nouvel onglet">Dubaï</a> (Émirats arabes unis) - 13 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Rome" target="_blank" aria-label="page wikipédia Rome nouvel onglet">Rome</a> (Italie) - 11 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Mexico" target="_blank" aria-label="page wikipédia Mexico nouvel onglet">Mexico</a> (Méxique) - 16 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Singapour" target="_blank" aria-label="page wikipédia Singapour nouvel onglet">Singapour</a> (Singapour) - 16 bénévoles
+                    </li>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Bombay" target="_blank" aria-label="page wikipédia Mumbaï nouvel onglet">Mumbaï</a> (Inde) - 6 bénévoles
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2023 HandiA11y. Tous droits réservés. </p>
+    </footer>
+</body>
+</html>

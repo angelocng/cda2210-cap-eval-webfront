@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/basis.css">
+    <link rel="stylesheet" href="../css/stylehandicap.css">
+    <link rel="stylesheet" href="../accessconfig/css/accessconfig.min.css" type="text/css" media="screen">
+    <script src="../accessconfig/js/accessconfig.min.js"></script>
+    <script src="../js/accordion.js" type="module"></script>
+    <title>Handicaps - Site HandiA11y</title>
+</head>
+
+<body>
+    <header>
+        <nav class="divLeft" aria-labelledby="navEvitement">
+            <h1 id="navEvitement">Accès rapides</h1>
+        <ul id="evitement">
+            <li>
+                <a href="#contenu">Aller au contenu</a>
+            </li>
+            <li>
+                <a href="#menusite">Aller au menu</a>
+            </li>
+            <li>
+                <a href="#rechercheOnSite">Aller à la recherche</a>
+            </li>
+        </ul>
+        </nav>
+        <div class="divLeft">
+        <img src="../imagesHandiA11y/a11yNow.png" alt="Icone du site HandiA11y">        
+        </div>
+        
+        <nav aria-labelledby="navMenuSite">
+            <h1 id="navMenuSite" hidden>Plan du site</h1>
+        <menu id="menusite">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./a11y.html">A11y</a></li>
+            <li><a href="./handicap.html">Handicaps</a></li>
+            <li><a href="./don.html">Faites un don</a></li>
+            <li><a href="./equipe.html">Équipe</a></li>
+            <li><a href="./plan.html">Plan du site</a></li>
+            <li><a href="./glossaire.html">Glossaire</a></li>
+            <li><a href="./terme.html">Termes</a></li>
+            <li><div id="accessconfig" data-accessconfig-buttonname="Paramètres d’accessibilité" data-accessconfig-params='{ "Prefix" : "a42-ac", "ContainerClass" : "","ModalCloseButton" : "","ModalTitle" : "","FormFieldset" : "","FormFieldsetLegend" : "","FormRadio" : ""}' ></div></li>
+        </menu>
+        </nav>
+        <div id="recherche">
+            <label class="sr-only" for="rechercheOnSite">Zone de recherche</label>
+            <input type="text" id="rechercheOnSite" name="rechercheOnSite" placeholder="Rechercher">
+            <button class="buttonDeRecherche" type="button">Rechercher</button>
+        </div>      
+    </header>
+
+<main id="contenu">
+    <section>
+        <h1>Symboles et types de handicaps</h1>
+        <section>
+            <ul>
+                    <li>
+                    <img src="../imagesHandiA11y/handicap-visuel.jpg" alt="">
+                    <div>
+                        <h2>Handicap visuel</h2>
+                        <p>Le handicap visuel désigne les limitations fonctionnelles liées à la vision, que ce soit une cécité totale ou partielle. Les personnes atteintes de handicap visuel peuvent utiliser des aides techniques telles que les plages brailles, les synthèses vocales, ou les dispositifs d'agrandissement de texte pour accéder à l'information.</p>
+                    </div>
+                    </li>
+                    <li>
+                        <img src="../imagesHandiA11y/handicap-auditif.jpg" alt="">
+                        <div>
+                            <h2>Handicap auditif</h2>
+                            <p>Le handicap auditif concerne les limitations fonctionnelles liées à l'ouïe, que ce soit une surdité totale ou partielle. Les personnes atteintes de handicap auditif peuvent utiliser des appareils auditifs, des boucles magnétiques ou des sous-titres pour accéder à l'information sonore.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../imagesHandiA11y/handicap-moteur.jpg" alt="">
+                        <div>
+                            <h2>Handicap moteur</h2>
+                            <p>Le handicap moteur concerne les limitations physiques comme l'incapacité à utiliser une souris ou la nécessité d'avoir une temps de réponse plus lent.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../imagesHandiA11y/handicap-cognitif.jpg" alt="">
+                        <div>
+                            <h2>Handicap cognitif</h2>
+                            <p>Le handicap cognitif concerne les problèmes de troubles de l'apprentissage, l'incapacité à se souvenir ou à se concentrer sur de grandes quantités d'informations, difficultés de lecture et de compréhension, difficultés à prendre des décisions.</p>
+                        </div>
+                    </li>
+            </ul>
+        </section>
+        <section id="sectionExemple">
+            <h2 id="exemples">Quelques matériels d'accessibilité</h2>
+            <section>
+                <ul id="listeExemple">
+                    <li>
+                        <img src="../imagesHandiA11y/image-cane-non-voyant.jpg" alt="">
+                        <h3>Canne pour personnes aveugles</h3>
+                    </li>
+                    <li>
+                        <img src="../imagesHandiA11y/plage-braille.png" alt="">
+                        <h3>Plage braille</h3>
+                    </li>
+                    <li>
+                        <img src="../imagesHandiA11y/synthese-vocale.png" alt="">
+                        <h3>Synthèse vocale</h3>
+                    </li>
+                    <li>
+                        <img src="../imagesHandiA11y/image-trackball.jpg" alt="">
+                        <h3>Trackball (remplace la souris)</h3>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy;2023 HandiA11y. Tous droits réservés. </p>
+    </footer>
+</body>
+</html>

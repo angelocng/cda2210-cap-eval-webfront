@@ -1,0 +1,91 @@
+:root{
+    --header-color:#0065d1;
+    --button-color:#ffc107;
+    --article-color:#9bc9f7;
+    --th-color:#6d6767;
+    --light:#ffffff;
+    --light-grey:#edecec;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    font-size:1.6rem;
+}
+
+header{
+    margin:0px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width:100%;
+    background-color:var(--header-color);
+    color:var(--light);
+}
+
+header>div>img{
+    height:100px;
+    width:auto;
+}
+
+header > nav > h1{
+    margin:10px;
+    font-size:1.6rem;
+}
+
+header>.divLeft>ul>li>a{
+    color:var(--light);
+}
+
+header>nav>menu{
+    display:flex;
+    justify-content:space-around;
+    list-style-type:none;
+    margin-right:200px;
+}
+
+header>nav>menu>li>a{
+    color:var(--light);
+}
+
+header> nav>menu>li{
+    padding-right:10px;
+    padding-top:25px;
+}
+
+header>#recherche{
+    padding-top: 40px;
+}
+
+header>#recherche>.buttonDeRecherche{
+    background-color: var(--button-color);
+}
+
+footer{
+    background-color: var(--header-color);
+    padding:10px;
+}
+
+footer >p{
+    text-align:center;
+    color:var(--light);
+    margin:0;
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+			clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
